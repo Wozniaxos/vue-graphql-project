@@ -1,14 +1,12 @@
 <template>
-  <main-layout>
-    <p>About page</p>
-  </main-layout>
+  <p>About page</p>
 </template>
 
 <script>
-  import MainLayout from '../layouts/Main'
+  import AboutLayout from '../layouts/About'
   export default {
     components: {
-      MainLayout
+      AboutLayout
     }
   }
 </script>
