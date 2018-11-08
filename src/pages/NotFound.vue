@@ -5,10 +5,10 @@
 </template>
 
 <script>
-  import MainLayout from '../layouts/Main.vue'
+  import Sraj from '../components/Srajkonent.vue'
   export default {
     components: {
-      MainLayout
+      Sraj
     }
   }
 </script>

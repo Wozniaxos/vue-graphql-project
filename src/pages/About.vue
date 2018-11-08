@@ -1,12 +1,17 @@
 <template>
-  <p>About page</p>
+  <div>
+    <p>About page</p>
+    <HelloWorld></HelloWorld>
+  </div>
 </template>
 
 <script>
-  import AboutLayout from '../layouts/About'
+  import HelloWorld from '../components/HelloWorld'
+
   export default {
+    name: "About",
     components: {
-      AboutLayout
+      HelloWorld
     }
   }
 </script>

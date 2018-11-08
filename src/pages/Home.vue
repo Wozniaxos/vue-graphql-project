@@ -1,14 +1,22 @@
 <template>
-  <main-layout>
+  <div>
     <p>Welcome home</p>
-  </main-layout>
+    {{ msg }}
+    <Sraj></Sraj>
+  </div>
 </template>
 
 <script>
-  import MainLayout from '../layouts/Main'
+import Sraj from '../components/Srajkonent'
   export default {
+    name: "Home",
     components: {
-      MainLayout
+      Sraj
+    },
+    data() {
+      return {
+        msg: "dupa"
+      }
     }
   }
 </script>
