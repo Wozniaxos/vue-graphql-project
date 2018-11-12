@@ -1,14 +1,14 @@
 <template>
-  <main-layout>
-    <p>Page not found</p>
-  </main-layout>
+  <div>
+    <ErrorWindow msg='sorry but page not found'></ErrorWindow>
+  </div>
 </template>
 
 <script>
-  import Sraj from '../components/Srajkonent.vue'
+  import ErrorWindow from '../components/ErrorWindow'
   export default {
     components: {
-      Sraj
+      ErrorWindow
     }
   }
 </script>

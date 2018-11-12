@@ -1,17 +1,17 @@
 <template>
   <div>
-    <p>About page</p>
-    <HelloWorld></HelloWorld>
+    <h2>About page</h2>
+    <ProjectInformation/>
   </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import ProjectInformation from '../components/ProjectInformation'
 
   export default {
     name: "About",
     components: {
-      HelloWorld
+      ProjectInformation
     }
   }
 </script>

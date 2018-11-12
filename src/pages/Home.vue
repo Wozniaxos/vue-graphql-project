@@ -1,21 +1,20 @@
 <template>
   <div>
-    <p>Welcome home</p>
-    {{ msg }}
-    <Sraj></Sraj>
+    <h2>Welcome home</h2>
+    <Dashboard v-bind:prop='dashboardProp'></Dashboard>
   </div>
 </template>
 
 <script>
-import Sraj from '../components/Srajkonent'
+import Dashboard from '../components/Dashboard'
   export default {
-    name: "Home",
+    name: 'Home',
     components: {
-      Sraj
+      Dashboard
     },
     data() {
       return {
-        msg: "dupa"
+        dashboardProp: 'I am dashboard prop'
       }
     }
   }

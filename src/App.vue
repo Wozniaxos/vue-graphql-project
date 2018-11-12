@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    this is template for vue
+    <h1>Welcome in vue application</h1>
     <router-view></router-view>
   </div>
 </template>

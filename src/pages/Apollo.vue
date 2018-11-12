@@ -1,12 +1,12 @@
 <template>
   <div>
-    <p>Welcome on apollo</p>
-    <Apollo></Apollo>
+    <h2>Welcome on apollo</h2>
+    <Apollo/>
   </div>
 </template>
 
 <script>
-  import Apollo from '../components/ApolloExample.vue'
+  import Apollo from '../components/ApolloExample'
   export default {
     components: {
       Apollo
