@@ -1,23 +1,14 @@
 import Vue from 'vue'
-import routes from './routes'
-import NotFound from './pages/NotFound'
+
+import router from './router'
 import { createProvider } from './vue-apollo'
+import App from './App';
 
 Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
-
-  data: {
-    currentRoute: window.location.pathname
-  },
-
-  computed: {
-    ViewComponent () {
-      return routes[this.currentRoute] || NotFound
-    }
-  },
-
+  router,
   apolloProvider: createProvider(),
-  render (h) { return h(this.ViewComponent) }
+  render: h => h(App)
 })
